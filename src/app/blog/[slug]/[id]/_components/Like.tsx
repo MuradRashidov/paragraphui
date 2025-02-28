@@ -28,7 +28,7 @@ const Like = ({
         onSuccess: () => refetchPostLikeData()     
     })
     return (
-        <div className="flex mx-6 my-10 gap-2 items-center justify-end [&>*]:self-end">
+        <div className="flex mx-6 my-10 gap-2 items-center z-50 ml-10 justify-end [&>*]:self-end">
             {
                 data?.userLikedPost ? (
                     <button onClick={() => unlikePostMutation.mutate()}>

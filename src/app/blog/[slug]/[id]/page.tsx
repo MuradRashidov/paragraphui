@@ -16,10 +16,10 @@ const Page = async ({params}:Props) => {
   const session = await getSession();
 
   return (
-    <main>
-      <div className="container sm:mb-24 mb-4 md:mt-24 mt-4  max-w-[70%] mx-auto">
+    <main >
+      <div className="container sm:mb-4 mb-4 md:mt-24 mt-4  max-w-[70%] mx-auto">
         <h2 className="font-semibold text-2xl tracking-tight text-center">{post.title}</h2>
-        <div className="flex flex-col md:flex-row w-full h-[70vh] mt-5">
+        <div className="flex flex-col md:flex-row w-full min-h-[70vh] mt-5">
           <div className="w-full md:w-[60%] h-full flex flex-col justify-center p-5">
             <div className="flex justify-between items-center">
               <div className="flex flex-col bg-gray-200 shadow-md rounded-md p-2">
@@ -35,15 +35,15 @@ const Page = async ({params}:Props) => {
               {new Date(post.createdAt).toLocaleString()}
             </span>
           </div>
-          <div className="mb-72 w-full h-full md:w-[40%] flex group justify-end relative">
+          <div className="mb-0 w-full sm:max-h-[400px] md:max-h-full md:w-[40%] flex group justify-end relative">
             <div className="font-bold items-center text-orange-700 text-3xl justify-center absolute top-0 left-0 z-30 w-full h-full hidden group-hover:flex bg-black cursor-pointer opacity-50 transition-all duration-200">
               Post Image
             </div>
-            <img className="w-[100%] h-full object-cover" src={post.thumbnail || ""} alt="post" />
+            <img className="w-[100%] max-h-[400px] md:max-h-[500px]  object-cover" src={post.thumbnail || ""} alt="post" />
           </div>
         </div>
       </div>
-      <div className="mt-72 md:mt-0">
+      <div className="mt-8 md:mt-0">
       <Like postId={post.id} user={session?.user}/>
       <Comments postId={post.id} user={session?.user} />
       </div>

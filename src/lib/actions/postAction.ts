@@ -80,9 +80,9 @@ export async function saveNewPost(
     },
   });
 
-  if (data) return { message: "Success! New Post Saved", ok: true };
+  if (data) return { message: "Yeni post yaradıldış", ok: true };
   return {
-    message: "Oops, Something Went Wrong",
+    message: "Xəta baş verdi",
     data: Object.fromEntries(formData.entries()),
   };
 }
@@ -110,9 +110,9 @@ export async function updatePost(state:PostFormState,formData:FormData):Promise<
       }
     })
 
-    if (data) return { message: "Success! New Post Saved", ok: true };
+    if (data) return { message: "Post yeniləndi", ok: true };
   return {
-    message: "Oops, Something Went Wrong",
+    message: "Xəta baş verdi",
     data: Object.fromEntries(formData.entries()),
     ok:false
   };

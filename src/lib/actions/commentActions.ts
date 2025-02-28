@@ -47,13 +47,13 @@ export const createComment = async (
     console.log("data");
     
     return {
-      message: "Success, your comment added",
+      message: "Şərhiniz əlavə olundu",
       ok: true,
       open: false,
     };
   }
   return {
-    message: "Something went wrong",
+    message: "Şərhiniz əlavə olunarkən xəta baş verdi",
     ok: false,
     open: true,
   };

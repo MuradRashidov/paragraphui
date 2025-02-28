@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className="bg-gradient-to-br from-orange-500 to-orange-600 text-white px-4 pt-12 md:pt-24">
             <div className="container mx-auto flex flex-col md:flex-row flex-wrap">
-                <div className="flex flex-col w-full mx-auto md:mt-32  justify-start items-start md:text-left md:w-2/5">
+                <div className="flex overflow-hidden flex-col w-full mx-auto md:mt-32  justify-start items-start md:text-left md:w-2/5">
                     <h3 className="text-3xl font-bold leading-tight text-slate-200 text-center flex justify-center mx-auto">Paragrapha xoş gəlmisiniz</h3>
                     <p className="my-5 md:bg-inherit bg-orange-700-400 p-4 rounded-md shadow-md opacity-90 tracking-wide mx-auto w-full text-lg text-gray-900 md:text-black  md:text-xl font-semibold md:w-[80%] text-center ">
                         {HERO_TEXT}

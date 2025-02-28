@@ -1,0 +1,43 @@
+
+> paragraphui@0.1.0 build
+> next build
+
+   ▲ Next.js 15.1.7
+   - Environments: .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+   Collecting page data ...
+   Generating static pages (0/12) ...
+   Generating static pages (3/12) 
+   Generating static pages (6/12) 
+   Generating static pages (9/12) 
+ ✓ Generating static pages (12/12)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+┌ ƒ /                                    183 B           115 kB
+├ ƒ /_not-found                          981 B           106 kB
+├ ƒ /api/auth/google/callback            152 B           106 kB
+├ ƒ /api/auth/signout                    152 B           106 kB
+├ ƒ /auth/forgot                         152 B           106 kB
+├ ƒ /auth/sign-in                        2.4 kB          120 kB
+├ ƒ /auth/sign-up                        2.47 kB         120 kB
+├ ƒ /blog/[slug]/[id]                    19.2 kB         149 kB
+├ ƒ /user/create-post                    324 B           183 kB
+├ ƒ /user/posts                          3.16 kB         139 kB
+├ ƒ /user/posts/(.)[id]/delete           6.48 kB         188 kB
+├ ƒ /user/posts/[id]/delete              171 B           109 kB
+└ ƒ /user/posts/[id]/update              505 B           184 kB
++ First Load JS shared by all            105 kB
+  ├ chunks/855-b3010f1514a3c1ec.js       50.5 kB
+  ├ chunks/87c73c54-877692f06af4a670.js  52.9 kB
+  └ other shared chunks (total)          2 kB
+
+
+ƒ Middleware                             41.4 kB
+
+ƒ  (Dynamic)  server-rendered on demand
+

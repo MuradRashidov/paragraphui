@@ -23,7 +23,7 @@ const Page = async ({params}:Props) => {
           <div className="w-full md:w-[60%] h-full flex flex-col justify-center p-5">
             <div className="flex justify-between items-center">
               <div className="flex flex-col bg-gray-200 shadow-md rounded-md p-2">
-                <p className="text-lg font-bold">Published By: </p>
+                <p className="text-lg font-bold">User: </p>
                 <p className="text-sm font-semibold">{post.author.name}</p>
               </div>
               <span>

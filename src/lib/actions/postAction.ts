@@ -1,3 +1,4 @@
+"use server"
 import { authFetchGraphql, fetchGraphql } from "../fetchGraphql";
 import { GET_POST_BY_ID, GET_POSTS, GET_USER_POSTS } from "../gqlQueries";
 import { print } from "graphql";

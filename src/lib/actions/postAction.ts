@@ -80,7 +80,7 @@ export async function saveNewPost(
     },
   });
 
-  if (data) return { message: "Yeni post yaradıldış", ok: true };
+  if (data) return { message: "Yeni post yaradıldı", ok: true };
   return {
     message: "Xəta baş verdi",
     data: Object.fromEntries(formData.entries()),

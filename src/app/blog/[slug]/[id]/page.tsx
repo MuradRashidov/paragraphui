@@ -43,7 +43,7 @@ const Page = async ({params}:Props) => {
           </div>
         </div>
       </div>
-      <div className="mt-80 md:mt-0">
+      <div className="mt-96 md:mt-0">
       <Like postId={post.id} user={session?.user}/>
       <Comments postId={post.id} user={session?.user} />
       </div>

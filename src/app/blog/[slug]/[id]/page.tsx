@@ -35,7 +35,7 @@ const Page = async ({params}:Props) => {
               {new Date(post.createdAt).toLocaleString()}
             </span>
           </div>
-          <div className="mb-48 w-full h-full md:w-[40%] flex group justify-end relative">
+          <div className="mb-72 w-full h-full md:w-[40%] flex group justify-end relative">
             <div className="font-bold items-center text-orange-700 text-3xl justify-center absolute top-0 left-0 z-30 w-full h-full hidden group-hover:flex bg-black cursor-pointer opacity-50 transition-all duration-200">
               Post Image
             </div>
@@ -43,7 +43,7 @@ const Page = async ({params}:Props) => {
           </div>
         </div>
       </div>
-      <div className="mt-96 md:mt-0">
+      <div className="mt-72 md:mt-0">
       <Like postId={post.id} user={session?.user}/>
       <Comments postId={post.id} user={session?.user} />
       </div>

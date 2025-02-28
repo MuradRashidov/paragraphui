@@ -17,7 +17,7 @@ const Page = async ({params}:Props) => {
 
   return (
     <main className="md:mt-24 mt-4">
-      <div className="container max-w-[70%] mx-auto">
+      <div className="container sm:mb-24 mb-4  max-w-[70%] mx-auto">
         <h2 className="font-semibold text-2xl tracking-tight text-center">{post.title}</h2>
         <div className="flex flex-col md:flex-row w-full h-[70vh] mt-5">
           <div className="w-full md:w-[60%] h-full flex flex-col justify-center p-5">

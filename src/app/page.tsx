@@ -28,8 +28,23 @@ export default async function Home({ searchParams }: Props) {
   return (
     <div className="bg-gradient-to-br text-white">
       <Hero />
-      <Posts posts={postss || []} currentPage={page ? +page : 1}
+      {
+        !!postss ? (
+          <Posts posts={postss || []} currentPage={page ? +page : 1}
         totalPages={Math.ceil(totalPostss / DEFAULT_PAGE_SIZE)} />
+        ):(
+          <div className="flex justify-center items-center h-12">
+            <p className="font-semibold text-2xl">
+              Render.com free plan issue
+            </p>
+            <p className="font-light text-xl">
+              Your free instance will spin down with inactivity, which can delay requests by 50 seconds or more.
+            </p>
+          </div>
+        )
+
+      }
+      
     </div>
   );
 }

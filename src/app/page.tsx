@@ -10,7 +10,7 @@ type Props = {
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 export default async function Home({ searchParams }: Props) {
-  setTimeout(async() => {
+  setInterval(async() => {
    await fetch(API_URL)
   }, 180000);
   const { page } = await searchParams;
